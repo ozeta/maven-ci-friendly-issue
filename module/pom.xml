@@ -21,15 +21,13 @@
     <profile>
       <id>ci</id>
       <properties>
-        <revision>0.0.1-SNAP</revision>
+        <revision>0.0.1-CI</revision>
       </properties>
     </profile>
     <profile>
       <id>dev</id>
       <properties>
         <revision>0.0.1-DEV</revision>
-        <domain.version>${revision}</domain.version>
-        <api.version>${revision}</api.version>
       </properties>
       <activation>
         <activeByDefault>true</activeByDefault>
