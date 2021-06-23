@@ -10,8 +10,30 @@
   <groupId>dev.oz</groupId>
   <artifactId>mvn-module</artifactId>
   <version>${revision}</version>
+  <packaging>pom</packaging>
 
-  
+  <!-- <modules>
+    <module>domain</module>
+    <module>api</module>
+  </modules> -->
+
+  <profiles>
+    <profile>
+      <id>ci</id>
+      <properties>
+        <revision>0.0.1-SNAP</revision>
+      </properties>
+    </profile>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <revision>0.0.1-DEV</revision>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
 
   <build>
     <plugins>
