@@ -8,15 +8,15 @@
   </parent>
 
   <groupId>dev.oz</groupId>
-  <artifactId>mvn-domain</artifactId>
+  <artifactId>mvn-api</artifactId>
   <version>${revision}</version>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.5.13</version>
+      <groupId>dev.oz</groupId>
+      <artifactId>mvn-domain</artifactId>
+      <version>0.0.1-DEV</version>
     </dependency>
 
   </dependencies>

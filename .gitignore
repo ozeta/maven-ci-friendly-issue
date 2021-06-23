@@ -1,5 +1,5 @@
 .history/*
 .m2/
 .vscode/
-*/target/*
+**/target/*
 .flattened-pom.xml

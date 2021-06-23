@@ -12,10 +12,10 @@
   <version>${revision}</version>
   <packaging>pom</packaging>
 
-  <!-- <modules>
+  <modules>
     <module>domain</module>
     <module>api</module>
-  </modules> -->
+  </modules>
 
   <profiles>
     <profile>
@@ -28,6 +28,8 @@
       <id>dev</id>
       <properties>
         <revision>0.0.1-DEV</revision>
+        <domain.version>${revision}</domain.version>
+        <api.version>${revision}</api.version>
       </properties>
       <activation>
         <activeByDefault>true</activeByDefault>
