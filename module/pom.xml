@@ -17,6 +17,10 @@
     <module>api</module>
   </modules>
 
+  <properties>
+    <domain.version>${revision}</domain.version>
+
+  </properties>
   <profiles>
     <profile>
       <id>ci</id>
@@ -40,9 +44,9 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>flatten-maven-plugin</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.7</version>
         <configuration>
-          <updatePomFile>true</updatePomFile>
+          <updatePomFile>false</updatePomFile>
           <flattenMode>resolveCiFriendliesOnly</flattenMode>
         </configuration>
         <executions>

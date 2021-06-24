@@ -16,7 +16,7 @@
     <dependency>
       <groupId>dev.oz</groupId>
       <artifactId>mvn-domain</artifactId>
-      <version>0.0.1-DEV</version>
+      <version>${domain.version}</version>
     </dependency>
 
   </dependencies>
